@@ -1,5 +1,7 @@
 <?php
 
+// Não carregar variáveis de ambiente do arquivo .env
+
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 $capsule = new Capsule;
@@ -8,9 +10,9 @@ $capsule->addConnection([
     'driver' => 'mysql',
     'host' => '127.0.0.1',
     'port' => 3306,
-    'database' => 'aplis',
+    'database' => 'desafio_db',
     'username' => 'root',
-    'password' => '123456',
+    'password' => 'root',
     'charset' => 'utf8mb4',
     'collation' => 'utf8mb4_unicode_ci',
     'prefix' => '',
